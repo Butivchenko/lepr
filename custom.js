@@ -82,7 +82,7 @@ jQuery(document).ready(function ($) {
     });
     $('.choose-mailbox').click(function () {
         var new_skype = $('#change_skype').val();
-        var myThemePath = getHomeUrl() + '/wp-content/themes/LepreStore';
+        var myThemePath = getHomeUrl() + '/wp-content/themes/My_theme';
         $.ajax({
             type: "POST",
             url: myThemePath + "/part/update_user_meta.php",
@@ -108,7 +108,7 @@ jQuery(document).ready(function ($) {
         return homeUrl;
     }
 
-    var myThemePath = getHomeUrl() + '/wp-content/themes/LepreStore';
+    var myThemePath = getHomeUrl() + '/wp-content/themes/My_theme';
     $('#goto-step31').click(function () {
         $('.stepline-steps-payment').css('top', '-2000px');
     });
@@ -332,7 +332,7 @@ jQuery(document).ready(function ($) {
         cookie.set('user_mail', first_step_mail, {path: '/'});
         cookie.set('user_discord', first_step_discord, {path: '/'});
         cookie.set('user_whats_app', first_step_whats_app, {path: '/'});
-        var myThemePath = getHomeUrl() + '/wp-content/themes/LepreStore';
+        var myThemePath = getHomeUrl() + '/wp-content/themes/My_theme';
         $.ajax({
             type: "POST",
             url: myThemePath + "/part/checkout_user_ajax_registration.php",
@@ -385,7 +385,7 @@ jQuery(document).ready(function ($) {
         else {
             $('.stepline-steps-payment').css('top', '-2000px');
         }
-        var myThemePath = getHomeUrl() + '/wp-content/themes/LepreStore';
+        var myThemePath = getHomeUrl() + '/wp-content/themes/My_theme';
         $.ajax({
             type: "POST",
             url: myThemePath + "/part/update_user_meta.php",
@@ -541,7 +541,7 @@ jQuery(document).ready(function ($) {
     });
 
     function send_notification() {
-        var myThemePath = getHomeUrl() + '/wp-content/themes/LepreStore';
+        var myThemePath = getHomeUrl() + '/wp-content/themes/My_theme';
         $.ajax({
             type: "POST",
             url: myThemePath + "/part/send_notification_for_new_user.php",
@@ -639,7 +639,7 @@ jQuery(document).ready(function ($) {
     }
     $('#remember_pas').click(function () {
         console.log($('form#login #username').val());
-        var myThemePath = getHomeUrl() + '/wp-content/themes/LepreStore';
+        var myThemePath = getHomeUrl() + '/wp-content/themes/My_theme';
         $.ajax({
             type: "POST",
             url: myThemePath + "/part/reset_password.php",
